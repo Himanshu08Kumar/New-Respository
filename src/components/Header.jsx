@@ -5,7 +5,6 @@ import './header.css';
 const Header = () => {
   return (
     <header className='header'>
-      {/* Portfolio Logo or Title */}
       <div className='logo'>
          <NavLink to='/' className='link'><p className='port'>Portfolio</p></NavLink>
       </div>
@@ -15,10 +14,10 @@ const Header = () => {
         <ul className='nav-header'>
           <li>
             <NavLink 
-              exact
+              
               to='/' 
               className='link' 
-              activeClassName='active'
+              // activeClassName='active'
             >
               About
             </NavLink>
@@ -27,7 +26,7 @@ const Header = () => {
             <NavLink 
               to='/projects' 
               className='link' 
-              activeClassName='active'
+              // activeClassName='active'
             >
               Projects
             </NavLink>
@@ -36,7 +35,7 @@ const Header = () => {
             <NavLink 
               to='/skills' 
               className='link' 
-              activeClassName='active'
+              // activeClassName='active'
             >
               Skills
             </NavLink>
@@ -45,7 +44,7 @@ const Header = () => {
             <NavLink 
               to='/resume' 
               className='link' 
-              activeClassName='active'
+              // activeClassName='active'
             >
               Resume
             </NavLink>
