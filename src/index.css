@@ -1,18 +1,7 @@
-body{
- background-color: black;
- color: azure;
+body {
+  background-color: #222629; 
+  color: #e6e6e6; 
+  margin: 0;
+  font-family: 'Arial', sans-serif;
 }
-.header{
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin: 0.5rem auto;
-}
-.header ul{
-  display: flex;
-  list-style: none;
-  gap: 1rem;
-}
-.nav-header{
-  /* cursor:pointer; */
-}
+

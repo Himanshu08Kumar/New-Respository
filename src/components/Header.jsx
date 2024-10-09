@@ -1,24 +1,64 @@
-import React from 'react'
-// import Logo from "../assets/Logo.png"
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './header.css';
 
 const Header = () => {
   return (
-    <div className='header'>
-      <div>
-        {/* <img src={Logo} alt="" width={250} height={200} style={{ marginTop:"-2rem"}}/> */}
-        <p>Portfolio</p>
+    <header className='header'>
+      {/* Portfolio Logo or Title */}
+      <div className='logo'>
+         <NavLink to='/' className='link'><p className='port'>Portfolio</p></NavLink>
       </div>
-      <div>
-        <ul className='nav-header'>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Skills</li>
-            <li>Resume</li>
-        </ul>
-     </div>
-     <p>Contact Us</p>
-    </div>
-  )
-}
 
-export default Header
+      {/* Navigation Links */}
+      <nav>
+        <ul className='nav-header'>
+          <li>
+            <NavLink 
+              exact
+              to='/' 
+              className='link' 
+              activeClassName='active'
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to='/projects' 
+              className='link' 
+              activeClassName='active'
+            >
+              Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to='/skills' 
+              className='link' 
+              activeClassName='active'
+            >
+              Skills
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to='/resume' 
+              className='link' 
+              activeClassName='active'
+            >
+              Resume
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+
+      {/* Contact Button */}
+      <div className='contact'>
+        <p>Contact Us</p>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

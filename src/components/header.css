@@ -1,0 +1,123 @@
+.invisible-scrollbar::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0.5rem auto; 
+    padding: 10px 20px;
+    background-color: #393e46; 
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .header:hover {
+    background-color: #333333; 
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #e6e6e6;
+  }
+  
+  .header ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .nav-header {
+    display: flex;
+    transition: all 0.3s;
+  }
+  
+  .nav-header li {
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+ 
+  .nav-header li:hover {
+    scale: 1.2; 
+    color: #4ecca3; 
+  }
+  
+
+  .nav-header li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    bottom: -5px; 
+    background-color: #4ecca3; 
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-header li:hover::after {
+    left: 0;
+    width: 100%;
+  }
+  
+ 
+  .nav-header li .active {
+    color: #4ecca3; 
+    font-weight: bold;
+  }
+  
+  .nav-header li .active::after {
+    left: 0;
+    width: 100%;
+    scale: 1.2; 
+    color: #4ecca3;
+  }
+  
+ 
+  .header p {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .header p:hover {
+    color: #e6e6e6; 
+  }
+  
+  .contact {
+    background: #4ecca3; 
+    padding: 5px 20px;
+    border-radius: 8px; 
+    color: #393e46; 
+    font-weight: bold; 
+    cursor: pointer;
+  }
+  .port{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .port:hover{
+    color: #4ecca3;
+  }
+  
+ 
+  @media screen and (max-width: 768px) {
+    .header {
+      flex-direction: column; 
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .header ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  

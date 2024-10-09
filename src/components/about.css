@@ -1,121 +1,121 @@
 .about-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #2e4053;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1e293b; 
+}
+
+.about-container {
+  position: relative; 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background: #0f172a; 
+  color: #e5e7eb;
+  border-radius: 32px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 10px solid transparent; 
+  border-image: linear-gradient(0deg, #ff9cee, #f6d6bd, #99e2b4, #a0c4ff, #ffc6ff) 1; 
+  animation: rotateBorder 5s linear infinite;
+}
+
+@keyframes rotateBorder {
+  0% {
+    border-image-source: linear-gradient(0deg, #ff9cee, #f6d6bd, #99e2b4, #a0c4ff, #ffc6ff); 
   }
-  
+  50% {
+    border-image-source: linear-gradient(180deg, #ff9cee, #f6d6bd, #99e2b4, #a0c4ff, #ffc6ff);
+  }
+  100% {
+    border-image-source: linear-gradient(360deg, #ff9cee, #f6d6bd, #99e2b4, #a0c4ff, #ffc6ff);
+  }
+}
+
+.about-animation {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.about-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #4ecca3; 
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #cbd5e1; 
+}
+
+.skills {
+  margin-top: 30px;
+}
+
+.skills h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #4ecca3;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  font-size: 18px;
+  padding: 10px 0;
+  transition: transform 0.3s;
+  color: #f4f4f5; 
+}
+
+.skills-list li:hover {
+  transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 768px) {
   .about-container {
-    position: relative; 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    background: #000000;
-    color: #908f8f;
-    border-radius: 32px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 10px solid transparent; 
-    border-image: linear-gradient(0deg, #ff6ec7, #ffd200, #4fd1c5, #bb86fc, #ff6ec7) 1; /* Gradient colors */
-    animation: rotateBorder 5s linear infinite; /* Infinite rotation */
+    flex-direction: column;
+    text-align: center;
   }
-  
-  @keyframes rotateBorder {
-    0% {
-      border-image-source: linear-gradient(0deg, #ff6ec7, #ffd200, #4fd1c5, #bb86fc, #ff6ec7);
-    }
-    50% {
-      border-image-source: linear-gradient(180deg, #ff6ec7, #ffd200, #4fd1c5, #bb86fc, #ff6ec7);
-    }
-    100% {
-      border-image-source: linear-gradient(360deg, #ff6ec7, #ffd200, #4fd1c5, #bb86fc, #ff6ec7);
-    }
-  }
-  
-  .about-animation {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    transition: transform 0.2s ease-in-out;
-  }
-  
+
+  .about-animation,
   .about-content {
-    flex: 1;
-    padding: 30px;
+    flex: 1 1 100%;
   }
-  
+
   .about-title {
-    font-size: 36px;
-    font-weight: bold;
-    color: #edebeb;
-    margin-bottom: 20px;
+    font-size: 28px;
   }
-  
+
   .about-description {
-    font-size: 18px;
-    margin-bottom: 15px;
-    line-height: 1.6;
+    font-size: 16px;
   }
-  
-  .skills {
-    margin-top: 30px;
-  }
-  
+
   .skills h2 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #d4d4d4;
+    font-size: 20px;
   }
-  
-  .skills-list {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
+
   .skills-list li {
-    font-size: 18px;
-    padding: 10px 0;
-    /* cursor: pointer; */
-    transition: transform 0.3s;
+    font-size: 16px;
   }
-  
-  .skills-list li:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Responsive Styles */
-  @media screen and (max-width: 768px) {
-    .about-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .about-animation,
-    .about-content {
-      flex: 1 1 100%;
-    }
-  
-    .about-title {
-      font-size: 28px;
-    }
-  
-    .about-description {
-      font-size: 16px;
-    }
-  
-    .skills h2 {
-      font-size: 20px;
-    }
-  
-    .skills-list li {
-      font-size: 16px;
-    }
-  }
-  
+}
