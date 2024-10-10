@@ -1,30 +1,34 @@
 [
     {
         "id": 1,
-        "project":"IWeather",
+        "project":"iWeather",
         "detail":"It provides real-time weather updates based on user location input. Integrated third-party APIs to display accurate weather data and forecasts, enhancing user experience and engagement.",
         "Tech_Stack":"HTML, CSS, JavaScript, Tailwind CSS",
-        "link":"https://himanshu08kumar.github.io/WeatherApp/"
+        "link":"https://himanshu08kumar.github.io/WeatherApp/",
+        "git":"https://github.com/Himanshu08Kumar/WeatherApp"
     },
     {
         "id": 2,
         "project":"Artify",
         "detail":"Artify is a web platform where users can explore and favorite various categories of art. Offers a dynamic and visually rich interface with real-time access to diverse art collections.",
         "Tech_Stack":"HTML, CSS, JavaScript",
-        "link":"https://himanshu08kumar.github.io/WeatherApp/"
+        "link":"https://artify-peach.vercel.app/",
+        "git":"https://github.com/Himanshu08Kumar/Artify"
     },
     {
         "id": 3,
         "project":"Feedback UI",
         "detail":"This is a responsive feedback form application designed to collect user input and opinions. Ensures accessibility across various devices, improving overall user experience.",
         "Tech_Stack":"HTML, CSS, JavaScript, ReactJs",
-        "link":"https://himanshu08kumar.github.io/WeatherApp/"
+        "link":"https://feedback-form-git-main-himanshu08kumars-projects.vercel.app/",
+        "git":"https://github.com/Himanshu08Kumar/feedbackForm"
     },
     {
         "id": 4,
         "project":"Diabetes Assistant Bot",
         "detail":"Developed an interactive web application designed to assist users in managing their diabetes by providing personalized advice. Empowers users to take control of their diabetes.",
         "Tech_Stack":"HTML, CSS, JavaScript, NextJs, Tailwind CSS",
-        "link":"https://himanshu08kumar.github.io/WeatherApp/"
+        "link":"https://diabetes-assistant.vercel.app/",
+        "git":"https://github.com/Himanshu08Kumar/diabetes-Assistant"
     }
 ]

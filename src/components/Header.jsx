@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className='header'>
       <div className='logo'>
-         <NavLink to='/' className='link'><p className='port'>Portfolio</p></NavLink>
+         <NavLink to='/' className='link'><p className='port' style={{fontFamily:"Yatra One"}}>Portfolio</p></NavLink>
       </div>
 
       {/* Navigation Links */}
