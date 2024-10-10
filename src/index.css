@@ -5,3 +5,11 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbars in Chrome, Safari, and Edge */
+}
+
+.invisible-scrollbar {
+  scrollbar-width: none; /* Hide scrollbars in Firefox */
+  -ms-overflow-style: none; /* Hide scrollbars in Internet Explorer and Edge */
+}

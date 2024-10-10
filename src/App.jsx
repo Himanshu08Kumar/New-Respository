@@ -5,6 +5,7 @@ import SparkleCursor from './components/SparkleCursor'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Projects from './components/Projects'
 import Error from './components/Error'
+import { div } from 'framer-motion/client'
 // import { path } from 'framer-motion/client'
 
 const App = () => {
@@ -14,8 +15,8 @@ const App = () => {
       element:(
         <>
         <Header/>
-        <About/>
         <SparkleCursor/>
+        <About/> 
         </>
       )
     },
@@ -35,6 +36,7 @@ const App = () => {
         <>
         <Header/>
         <Error/>
+        <SparkleCursor/>
         </>
       )
     }
@@ -43,7 +45,9 @@ const App = () => {
 
   ])
   return (
-    <RouterProvider router={router}/>
+    <div className='invisible-scrollbar' style={{ height: "100vh", overflowY: "scroll" }}>
+    <RouterProvider router={router} />
+    </div>
   )
 }
 

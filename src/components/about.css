@@ -4,6 +4,7 @@
   align-items: center;
   padding: 10px 20px;
   background-color: #1e293b; 
+  cursor: default;
 }
 
 .about-container {
@@ -61,8 +62,20 @@
   font-size: 18px;
   margin-bottom: 15px;
   line-height: 1.6;
-  color: #cbd5e1; 
+  color: #cbd5e1;
+  letter-spacing: 1.2px;
+  font-family: "Yatra One", system-ui;
 }
+
+.hover-word {
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+.hover-word:hover {
+  color: #fb8b24; /* Adjust the color as needed */
+}
+
+
 
 .skills {
   margin-top: 30px;

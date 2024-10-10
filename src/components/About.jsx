@@ -52,7 +52,7 @@ const About = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ type: "spring", stiffness: 120, delay: 0.7 }}
             >
-              <span style={{ color: "#566573", fontSize: "1.5rem" }}>
+              <span style={{ color: "#566573", fontSize: "2.4rem" }}>
                 Front-End Developer
               </span>
             </motion.p>
@@ -63,7 +63,15 @@ const About = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ type: "spring", stiffness: 120, delay: 0.8 }}
             >
-               I expertise in creating visually appealing and user-centric applications using modern technologies like React, JavaScript, and CSS. With a keen eye for detail and a commitment to staying updated with the latest industry trends, I strive to build websites that not only look great but also provide a seamless and intuitive user experience.
+              {`I expertise in creating visually appealing and user-centric applications using modern technologies like React, JavaScript, and CSS. With a keen eye for detail and a commitment to staying updated with the latest industry trends, I strive to build websites that not only look great but also provide a seamless and intuitive user experience.`
+                .split(" ")
+                .map((word, index) => (
+                  <>
+                  <span key={index} className="hover-word">
+                    { word } {" "}
+                  </span>{" "}
+                  </>
+                ))}
             </motion.p>
           </motion.div>
         </div>
