@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useLottie } from "lottie-react";
 import about from "../assets/about.json";
 import nature from "../assets/nature.json";
@@ -70,7 +70,7 @@ const About = () => {
                 .map((word, index) => (
                   <>
                     <span key={index} className="hover-word">
-                      {word}{" "}
+                      {word}
                     </span>{" "}
                   </>
                 ))}
@@ -78,8 +78,10 @@ const About = () => {
           </motion.div>
           <motion.div
             className="about-animation"
-            transition={{ type: "spring", stiffness: 300 }}
-            style={{opacity:0.9}}
+            initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 0.9 }}
+            transition={{ type: "spring", stiffness: 300, delay: 0.9 }}
+            
           >
             {AboutView}
           </motion.div>
