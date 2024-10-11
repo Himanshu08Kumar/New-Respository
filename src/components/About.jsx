@@ -1,10 +1,12 @@
 import React from "react";
 import "./about.css";
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom'
 import { useLottie } from "lottie-react";
 import about from "../assets/about.json";
-import nature from "../assets/nature.json";
-import cycle from "../assets/cycle.json"
+import cycle from "../assets/cycle.json";
+import { FaSquareGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 
 const About = () => {
   const options = {
@@ -75,6 +77,15 @@ const About = () => {
                   </>
                 ))}
             </motion.p>
+            <motion.div
+             className="about-description"
+             initial={{ x: 100, opacity: 0 }}
+             animate={{ x: 0, opacity: 1 }}
+             transition={{ type: "spring", stiffness: 120, delay: 0.9 }}
+            >
+              <Link to="https://github.com/Himanshu08Kumar" target="_blank" style={{marginRight:"10px"}}><FaSquareGithub className="reposatory-link" size={30}/></Link>
+              <Link to="https://www.linkedin.com/in/himanshukr10/" target="_blank" ><FaLinkedin className="reposatory-link" size={30}/></Link>
+            </motion.div>
           </motion.div>
           <motion.div
             className="about-animation"
