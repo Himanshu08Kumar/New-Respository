@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Projects from './components/Projects'
 import Error from './components/Error'
 import { div } from 'framer-motion/client'
+import Skills from './components/Skills'
 // import { path } from 'framer-motion/client'
 
 const App = () => {
@@ -26,6 +27,16 @@ const App = () => {
         <>
         <Header/>
         <Projects/>
+        <SparkleCursor/>
+        </>
+      )
+    },
+    {
+      path:'skills',
+      element:(
+        <>
+        <Header/>
+        <Skills/>
         <SparkleCursor/>
         </>
       )

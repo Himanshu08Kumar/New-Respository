@@ -100,24 +100,6 @@ const About = () => {
 
         </div>
       </motion.section>
-      {/* <h1 className="about-title">
-            <motion.span
-              initial={{ y: 50, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.6, type: 'spring', stiffness: 100 }}
-            >
-              About Me
-            </motion.span>
-          </h1> 
-
-          <motion.p
-  className="about-description"
-  initial={{ x: 100, opacity: 0 }}
-  animate={{ x: 0, opacity: 1 }}
-  transition={{ type: 'spring', stiffness: 120, delay: 0.5 }}
->
-  Hii, I'm
-</motion.p>  */}
     </>
   );
 };
