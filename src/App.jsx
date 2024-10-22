@@ -4,6 +4,7 @@ import About from './components/About'
 import SparkleCursor from './components/SparkleCursor'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Projects from './components/Projects'
+import Resume from './components/Resume'
 import Error from './components/Error'
 import { div } from 'framer-motion/client'
 import Skills from './components/Skills'
@@ -38,6 +39,15 @@ const App = () => {
         <Header/>
         <Skills/>
         <SparkleCursor/>
+        </>
+      )
+    },
+    {
+      path:'resume',
+      element:(
+        <>
+          <Header/>
+          <Resume/>
         </>
       )
     },

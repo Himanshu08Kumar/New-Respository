@@ -9,20 +9,30 @@ import { motion } from "framer-motion";
 import background from "../assets/background.json";
 import "./skills.css"
 
-// Animation Variants for the Icons
 const iconVariants = {
-  hidden: { opacity: 0, x: -50 },
+  hidden: (i) => {
+    const directions = [
+      { x: -50, y: 0 }, 
+      { x: 50, y: 0 },
+      { x: 0, y: -50 }, 
+      { x: 0, y: 50 }  
+    ];
+
+    const direction = directions[i % directions.length];
+    return { opacity: 0, ...direction };
+  },
   visible: (i) => ({
     opacity: 1,
     x: 0,
+    y: 0,
     transition: {
-      delay: i * 0.1, // Stagger effect for each icon
+      delay: i * 0.1,
       type: "spring",
       stiffness: 150,
     },
   }),
   hover: {
-    scale: 1.01,
+    scale: 1.03,
     rotate: 2,
     transition: { type: "spring", stiffness: 300 },
   },
@@ -36,7 +46,6 @@ const Skills = () => {
 
   const { View: AboutView } = useLottie(options);
 
-  // Array of Skills Data
   const skills = [
     { icon: <FaHtml5 />, name: 'HTML' },
     { icon: <FaCss3Alt />, name: 'CSS' },
@@ -56,7 +65,6 @@ const Skills = () => {
     <>
       <div className="background-animation">{AboutView}</div>
       
-      {/* Skills List */}
       <motion.div
         className="skills-container"
         initial="hidden"
@@ -64,7 +72,7 @@ const Skills = () => {
         variants={{
           visible: {
             transition: {
-              staggerChildren: 0.1, // Stagger animation for each skill
+              staggerChildren: 0.1, 
             },
           },
         }}
@@ -76,6 +84,8 @@ const Skills = () => {
             custom={index}
             variants={iconVariants}
             whileHover="hover"
+            initial="hidden"
+            animate="visible"
           >
             <div className="icon-text-container">
               <div className="icon">{skill.icon}</div>

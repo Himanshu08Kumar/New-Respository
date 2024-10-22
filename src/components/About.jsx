@@ -5,12 +5,13 @@ import { Link } from 'react-router-dom'
 import { useLottie } from "lottie-react";
 import about from "../assets/about.json";
 import cycle from "../assets/cycle.json";
+import main1 from "../assets/main.json"
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 
 const About = () => {
   const options = {
-    animationData: about,
+    animationData: main1,
     loop: true,
   };
 
@@ -89,8 +90,8 @@ const About = () => {
           </motion.div>
           <motion.div
             className="about-animation"
-            initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 0.9 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.9 }}
             transition={{ type: "spring", stiffness: 300, delay: 0.9 }}
             
           >
