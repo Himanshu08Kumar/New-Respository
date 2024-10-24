@@ -48,6 +48,7 @@ const App = () => {
         <>
           <Header/>
           <Resume/>
+          <SparkleCursor/>
         </>
       )
     },
