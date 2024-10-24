@@ -15,6 +15,35 @@
   background-color: #333333;
 }
 
+.nav-header li::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  bottom: -5px; 
+  background-color: #4ecca3; 
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-header li:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+
+.nav-header li .active {
+  color: #4ecca3; 
+  font-weight: bold;
+}
+
+.nav-header li .active::after {
+  left: 0;
+  width: 100%;
+  scale: 1.2; 
+  color: #4ecca3;
+}
+
 .link {
   text-decoration: none;
   color: #e6e6e6;
@@ -60,12 +89,13 @@
   color: #4ecca3;
 }
 
-/* .nav-header li {
+
+.nav-header li {
     cursor: pointer;
   position: relative;
   padding: 5px;
   transition: transform 0.3s, color 0.3s;
-} */
+}
 
 .nav-header {
   display: flex;
@@ -88,6 +118,10 @@
   color: #393e46;
   font-weight: bold;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.contact:hover{
+  color:#fff
 }
 
 .port {
@@ -117,6 +151,7 @@
 .modal-content {
   background-color: #393939cc;
   padding: 20px;
+  cursor: default;
   border-radius: 10px;
   width: 90%;
   max-width: 500px;
@@ -124,11 +159,15 @@
 }
 
 .close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
+  position: relative;
+  top: 5px;
+  left: 95%;
   font-size: 30px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.close:hover{
+  color: red;
 }
 
 
@@ -139,10 +178,13 @@ form {
 
 input, textarea {
   margin-bottom: 1rem;
+  margin-top: 10px;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  color: #efefef;
+  background-color: #393e46;
 }
 
 button {
