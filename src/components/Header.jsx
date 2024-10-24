@@ -48,7 +48,7 @@ const Header = () => {
     <header className='header'>
       <div className='logo'>
         <NavLink to='/' className='link'>
-          <p className='port' style={{ fontFamily: 'Yatra One' }}>Portfolio</p>
+          <p className='port' style={{ fontFamily: 'Rubik Wet Paint', fontWeight:'400', color:"#FEF4E8" }}>Body of Work</p>
         </NavLink>
       </div>
 
@@ -70,7 +70,7 @@ const Header = () => {
       
 
       <div className='contact' onClick={toggleForm}>
-        <p>Contact Us</p>
+        <p>Contact Me</p>
       </div>
 
     
