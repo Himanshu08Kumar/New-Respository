@@ -2,6 +2,7 @@ import React from 'react';
 import { FaHtml5, FaJsSquare, FaReact, FaNodeJs, FaJava, FaGitAlt, FaGithub } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa6";
 import { RiTailwindCssFill, RiBootstrapLine } from "react-icons/ri";
+import { SiMysql } from "react-icons/si";
 import { AiOutlineLinux } from "react-icons/ai";
 import { IoLogoWindows } from "react-icons/io";
 import { useLottie } from "lottie-react";
@@ -51,7 +52,8 @@ const Skills = () => {
     { icon: <FaCss3Alt />, name: 'CSS' },
     { icon: <FaJsSquare />, name: 'JavaScript' },
     { icon: <FaReact />, name: 'ReactJs' },
-    { icon: <FaNodeJs />, name: 'NodeJs' },
+    // { icon: <FaNodeJs />, name: 'NodeJs' },
+    { icon: <SiMysql />, name: 'MySQL' },
     { icon: <FaJava />, name: 'Java' },
     { icon: <RiTailwindCssFill />, name: 'Tailwind CSS' },
     { icon: <RiBootstrapLine />, name: 'Bootstrap' },

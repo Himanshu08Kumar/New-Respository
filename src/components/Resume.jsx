@@ -5,7 +5,7 @@ const Resume = () => {
     <div style={{ width: '100%', height: '100vh' }}>
       <embed
         // src={`${process.env.PUBLIC_URL}/Himanshu_Resume.pdf`}
-        src='Resume-Himanshu[2].pdf'
+        src='Himanshu_Resume.pdf'
         type="application/pdf"
         width="100%"
         height="100%"
